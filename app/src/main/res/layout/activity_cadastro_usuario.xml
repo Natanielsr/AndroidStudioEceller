@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_usuario"
+    tools:context="com.natanielsoares.eceller.CadastroUsuarioActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Dados Pessoais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioNome"
+        android:hint="Nome Completo*"
+        android:text="Nataniel Soares" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/edtCadastrarUsuarioDddTelefone"
+            android:hint="DDD"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.1
+            "
+            android:text="15" />
+
+        <com.natanielsoares.eceller.Mascaras.PhoneEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:id="@+id/edtCadastrarUsuarioTelefone"
+            android:hint="Telefone"
+            android:layout_weight=".90"
+            android:text="3255-2537" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/edtCadastrarUsuarioDddCelular"
+            android:hint="DDD"
+            android:layout_weight=".10"
+            android:text="15" />
+
+        <com.natanielsoares.eceller.Mascaras.PhoneEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:id="@+id/edtCadastrarUsuarioCelular"
+            android:hint="Celular*"
+        android:layout_weight=".90"
+            android:text="99627-3959" />
+    </LinearLayout>
+
+    <com.natanielsoares.eceller.Mascaras.CpfEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioCpf"
+        android:hint="CPF*"
+        android:inputType="number"
+        android:text="426.048.768-09" />
+
+    <TextView
+        android:text="Selecione sua Data de Nascimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18" />
+
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dpCadastrarUsuarioDataDeNasc"
+        android:calendarViewShown="false"
+        android:layout_weight="0.57" />
+
+    <TextView
+        android:text="Dados da Conta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioEmail"
+        android:hint="Email*"
+        android:text="contatonatanielsoares@gmail.com" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioRptEmail"
+        android:hint="Repita o Email*" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioSenha"
+        android:hint="Senha*"
+        android:text="12345" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioRptSenha"
+        android:hint="Repita a Senha*" />
+
+    <TextView
+        android:text="Dados de envio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_marginTop="20dp" />
+
+    <com.natanielsoares.eceller.Mascaras.CepEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioCep"
+        android:hint="Cep"
+        android:inputType="number"
+        android:text="18240-000" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioEndereco"
+        android:hint="Endereço*"
+        android:text="Rua Adão Ribeiro" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioNumeroEndereco"
+        android:hint="Numero Endereço*"
+        android:inputType="number"
+        android:text="304" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtCadastrarUsuarioComplemento"
+        android:hint="Complemento" />
+
+    <TextView
+        android:text="Selecione seu Estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spCadastrarUsuarioEstado"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:text="Selecione sua Cidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spCadastrarUsuarioCidade"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:text="Cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCadastrarUsuario" />
+</LinearLayout>
+</ScrollView>
